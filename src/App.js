@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import "./reset.css";
+import "./style.css";
+import NavBar from './components/Header/NavBar';
+import Home from './pages/Home';
+import { useState } from 'react';
+import PreLoader from './components/PreLoader';
 
 function App() {
+  const [load, upadateLoad] = useState(true);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PreLoader load={load} />
+      <NavBar />
+      <Home />
     </div>
   );
 }

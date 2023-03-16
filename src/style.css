@@ -1,0 +1,34 @@
+* {
+    --section-background-color: linear-gradient(
+      to bottom left,
+      rgb(5, 8, 40), rgb(1, 4, 39)
+    );
+  
+    --image-gradient: linear-gradient(
+      to bottom left,
+      rgba(5, 8, 40, 0.87), rgba(1, 4, 39, 0.925)
+    );
+  
+    --imp-text-color: #7500fa;
+    --imp-bold-text-color: #7500fa;
+  }
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+body {
+  margin: 0;
+  font-family: "Raleway", serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to left, rgb(5, 8, 40), rgb(1, 4, 39));
+}
+
+body {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    color: white;
+}
+
+.purple {
+  color: var(--imp-text-color);
+}
